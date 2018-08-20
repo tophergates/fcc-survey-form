@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>freeCodeCamp Build a Survey Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Anton|Fira+Sans" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+</head>
+
+<body>
+  <div class="pageWrapper">
+    <header class="header">
+      <h1 class="title" id="title">Developer Survey</h1>
+    </header>
+    <main class="main">
+      <form class="survey-form" id="survey-form">
+        <p class="form__description" id="description">Please complete the following developer survey.</p>
+        <div class="form__row">
+          <label class="form__label required" id="name-label" for="name">Name:</label>
+          <input class="form__input" type="text" id="name" placeholder="Jane Doe" required />
+        </div>
+        <div class="form__row">
+          <label class="form__label required" id="email-label" for="email">Email:</label>
+          <input class="form__input" type="email" id="email" placeholder="janedoe@email.net" required />
+        </div>
+        <div class="form__row">
+          <label class="form__label required" id="number-label" for="number">Age:</label>
+          <input class="form__input" type="number" id="number" placeholder="36" min="1" max="110" required />
+        </div>
+        <div class="form__row">
+          <label class="form__label required" for="dropdown">Employment status:</label>
+          <select class="form__input" id="dropdown" required>
+            <option value disabled>Select an Option</option>
+            <option value="1">Student</option>
+            <option value="2">Volunteer</option>
+            <option value="3">Employed Part-time</option>
+            <option value="4">Employed Full-time</option>
+            <option value="5">Self Employed</option>
+            <option value="6">Unemployed</option>
+          </select>
+        </div>
+        <div class="form__row">
+          <label class="form__label" for="experience">Development experience:</label>
+          <ul class="experience" id="experience">
+            <li>
+              <label>
+                <input type="radio" name="experience" value="1"> 0-1 years
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="radio" name="experience" value="2"> 2-5 years
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="radio" name="experience" value="3"> 5-10 years
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="radio" name="experience" value="4"> 10+ years
+              </label>
+            </li>
+          </ul>
+        </div>
+        <div class="form__row">
+          <label class="form__label" for="preferences">Programming languages you use (check all that apply):</label>
+          <ul class="preferences" id="preferences">
+            <li>
+              <label>
+                <input name="preference" value="javascript" type="checkbox"> JavaScript
+              </label>
+            </li>
+            <li>
+              <label>
+                <input name="preference" value="php" type="checkbox"> PHP
+              </label>
+            </li>
+            <li>
+              <label>
+                <input name="preference" value="ruby" type="checkbox"> Ruby
+              </label>
+            </li>
+            <li>
+              <label>
+                <input name="preference" value="nodejs" type="checkbox"> Node JS
+              </label>
+            </li>
+            <li>
+              <label>
+                <input name="preference" value="c#" type="checkbox"> C#
+              </label>
+            </li>
+            <li>
+              <label>
+                <input name="preference" value="c++" type="checkbox"> C++
+              </label>
+            </li>
+            <li>
+              <label>
+                <input name="preference" value="go" type="checkbox"> Golang
+              </label>
+            </li>
+            <li>
+              <label>
+                <input name="preference" value="python" type="checkbox"> Python
+              </label>
+            </li>
+            <li>
+              <label>
+                <input name="preference" value="java" type="checkbox"> Java
+              </label>
+            </li>
+            <li>
+              <label>
+                <input name="preference" value="perl" type="checkbox"> Perl
+              </label>
+            </li>
+            <li>
+              <label>
+                <input name="preference" value="mysql" type="checkbox"> MySQL
+              </label>
+            </li>
+            <li>
+              <label>
+                <input name="preference" value="postgresql" type="checkbox"> PostgreSQL
+              </label>
+            </li>
+            <li>
+              <label>
+                <input name="preference" value="mongodb" type="checkbox"> MongoDB
+              </label>
+            </li>
+          </ul>
+        </div>
+        <div class="form__row">
+          <label class="form__label" for="comments">Additional Comments:</label>
+          <textarea class="form__input" id="comments" placeholder="Enter your comments here..." rows="10" cols="35"></textarea>
+        </div>
+        <div class="form__row">
+          <button id="submit" type="submit">Submit</button>
+        </div>
+      </form>
+    </main>
+    <footer class="footer">
+      <p class="footer__text">Made with <span class="footer__heart">♥</span> by tophergates</p>
+    </footer>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+
+</html>
